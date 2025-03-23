@@ -1,0 +1,122 @@
+/* General Page Styles */
+body {
+    background-color: #FEFDED;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Heading */
+h2 {
+    color: #FA7070;
+    margin-bottom: 20px;
+}
+
+/* Design List */
+.design-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Design Cards */
+.design-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.design-card:hover {
+    transform: scale(1.05);
+}
+
+.design-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Design Title */
+.design-card h5 {
+    margin: 10px 0;
+    color: #FA7070;
+}
+
+/* Price */
+.design-card p {
+    font-size: 18px;
+    color: #A1C398;
+}
+
+/* Approve Button */
+.approve-btn {
+    background: #FA7070;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.approve-btn:hover {
+    background: #A1C398;
+    color: white;
+}
+
+/* Checkout Section */
+.checkout {
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: none;
+}
+
+.checkout h3 {
+    color: #FA7070;
+}
+
+/* Checkout Button */
+.btn-success {
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #FA7070;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-success:hover {
+    background: #A1C398;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .design-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
